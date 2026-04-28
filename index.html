@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Office System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏢 Travel Office Panel</h1>
+
+<!-- Ticket Section -->
+<h2>✈️ Ticket Entry</h2>
+
+<input id="name" placeholder="Customer Name">
+<input id="phone" placeholder="Mobile Number">
+<input id="sector" placeholder="Sector (Dhaka → Muscat)">
+<input id="ticketDate" type="date">
+<input id="flightDate" type="date">
+<input id="total" placeholder="Total Tk">
+<input id="paid" placeholder="Paid Tk">
+
+<select id="payment">
+  <option>Cash</option>
+  <option>Transfer</option>
+</select>
+
+<button onclick="addTicket()">Save Ticket</button>
+
+<h3>Ticket List</h3>
+<div id="ticketList"></div>
+
+<hr>
+
+<!-- Passport Section -->
+<h2>🛂 Passport Entry</h2>
+
+<input id="pDate" type="date">
+<input id="bill" placeholder="Bill Tk">
+<input id="oman" placeholder="Oman Number">
+<input id="bd" placeholder="BD Number">
+<input id="note" placeholder="Note">
+
+<button onclick="addPassport()">Save Passport</button>
+
+<h3>Passport List</h3>
+<div id="passportList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
